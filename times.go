@@ -12,6 +12,7 @@ type Times struct{}
 
 var Time = new(Times)
 
+// 整数形转秒数
 func (t *Times) IntToSecond(second int) time.Duration {
 	timeSecond := time.Duration(second)
 	return timeSecond * time.Second

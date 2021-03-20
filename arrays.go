@@ -12,6 +12,7 @@ type Arrays struct{}
 
 var Array = new(Arrays)
 
+// 字符串数组转字符串
 func (a *Arrays) strArrayToString(arr []string, need string) string {
 	return strings.Join(arr, need)
 }
